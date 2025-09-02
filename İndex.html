@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTO MUAMMER - Profesyonel Oto Servis & Bakım</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>OTO MUAMMER</h1>
+      <button id="mobileMenuButton">☰</button>
+      <ul id="navMenu">
+        <li><a href="#home">Anasayfa</a></li>
+        <li><a href="#services">Hizmetler</a></li>
+        <li><a href="#gallery">Galeri</a></li>
+        <li><a href="#reviews">Yorumlar</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <h2>Profesyonel Oto Servis & Bakım</h2>
+    <p>Aracınız için güvenilir ve kaliteli servis hizmeti.</p>
+    <button id="heroAppointmentBtn">Hemen Randevu Al</button>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Hizmetlerimiz</h2>
+    <div>
+      <div>
+        <h3>Motor Bakımı</h3>
+        <p>Motor performansınızı artırmak için uzman bakım hizmeti.</p>
+      </div>
+      <div>
+        <h3>Fren Kontrolü</h3>
+        <p>Güvenli sürüş için detaylı fren sistem kontrolü.</p>
+      </div>
+      <div>
+        <h3>Yağ Değişimi</h3>
+        <p>Motor ömrünü uzatmak için kaliteli yağ değişimi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Galeri</h2>
+    <div>
+      <div>
+        <img src="https://source.unsplash.com/800x400/?car,service" alt="Servis 1">
+      </div>
+      <div>
+        <img src="https://source.unsplash.com/800x400/?car,repair" alt="Servis 2">
+      </div>
+      <div>
+        <img src="https://source.unsplash.com/800x400/?car,garage" alt="Servis 3">
+      </div>
+    </div>
+    <div>
+      <button></button>
+      <button></button>
+      <button></button>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews">
+    <h2>Müşteri Yorumları</h2>
+    <div>
+      <div>
+        <p>"Gerçekten işlerinde çok profesyoneller. Aracım ilk günkü gibi oldu."</p>
+        <p>- Ahmet Y.</p>
+      </div>
+      <div>
+        <p>"Hızlı ve güvenilir hizmet. Herkese tavsiye ederim."</p>
+        <p>- Elif K.</p>
+      </div>
+      <div>
+        <p>"Fiyat/performans açısından mükemmel. Tekrar tercih edeceğim."</p>
+        <p>- Mehmet A.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>İletişim</h2>
+    <div>
+      <p><strong>Adres:</strong> İstanbul, Türkiye</p>
+      <p><strong>Telefon:</strong> +90 555 123 45 67</p>
+      <p><strong>Email:</strong> info@otomuammer.com</p>
+    </div>
+    <form id="appointmentForm">
+      <input type="text" placeholder="Adınız" required>
+      <input type="tel" placeholder="Telefon Numaranız" required>
+      <input type="date" required>
+      <button type="submit">Randevu Al</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 OTO MUAMMER. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="appointmentModal">
+    <div>
+      <div>
+        <h3>Randevu Al</h3>
+        <button id="closeModal">&times;</button>
+      </div>
+      <div>
+        <form id="modalAppointmentForm">
+          <input type="text" placeholder="Adınız" required>
+          <input type="tel" placeholder="Telefon Numaranız" required>
+          <input type="date" required>
+          <button type="submit">Randevu Al</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast">Randevunuz başarıyla alındı!</div>
+</body>
+  </html>
