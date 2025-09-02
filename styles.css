@@ -1,0 +1,185 @@
+/* Genel Stil Ayarları */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Koyu arka plan */
+    color: #fff; /* Beyaz metin rengi */
+}
+
+h1, h2, h3 {
+    color: #e63946; /* Kırmızı başlık rengi */
+}
+
+/* Header Stili */
+header {
+    background-color: #333; /* Koyu gri arka plan */
+    padding: 20px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navMenu {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navMenu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#navMenu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#navMenu a:hover {
+    color: #e63946; /* Kırmızı renk geçişi */
+}
+
+/* Hero Section */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e63946; /* Kırmızı arka plan */
+    animation: fadeIn 1s ease-in-out;
+}
+
+#heroAppointmentBtn {
+    background-color: #fff; /* Beyaz buton */
+    color: #333; /* Koyu metin */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#heroAppointmentBtn:hover {
+    background-color: #ffb703; /* Hover efekt */
+}
+
+/* Hizmetler Bölümü */
+#services {
+    padding: 50px 20px;
+    background-color: #333; /* Koyu gri arka plan */
+}
+
+#services div {
+    margin-bottom: 30px;
+}
+
+/* Galeri Bölümü */
+#gallery {
+    padding: 50px 20px;
+    background-color: #1a1a1a; /* Koyu arka plan */
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.05); /* Resim hover efekti */
+}
+
+/* Yorumlar Bölümü */
+#reviews {
+    padding: 50px 20px;
+    background-color: #e63946; /* Kırmızı arka plan */
+}
+
+/* İletişim Bölümü */
+#contact {
+    padding: 50px 20px;
+    background-color: #333; /* Koyu gri arka plan */
+}
+
+form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ffb703; /* Sarı buton */
+    color: #333; /* Koyu metin */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e63946; /* Kırmızı hover efekti */
+}
+
+/* Modal Stili */
+#appointmentModal {
+    display: none; /* Başlangıçta gizli */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Yarı saydam arka plan */
+    justify-content: center;
+    align-items: center;
+}
+
+#appointmentModal div {
+    background-color: #fff; /* Beyaz arka plan */
+    padding: 20px;
+    border-radius: 10px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+/* Toast Mesajı */
+#toast {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333; /* Koyu arka plan */
+    color: #fff; /* Beyaz metin */
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    #navMenu {
+        display: none; /* Mobilde menüyü gizle */
+    }
+
+    #mobileMenuButton {
+        display: block; /* Mobil menü butonunu göster */
+    }
+}
